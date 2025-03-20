@@ -1,4 +1,4 @@
-O repositório <b>AulasIniciais</b> foi criado para atualização do meu progresso ao aprender Java.
+O repositório <b>AulasIniciais</b> foi criado para gerenciamento e atualização do meu progresso ao aprender Java.
 
 <h2> Aula 01: HelloWorld</h2>
 A estrutura de um código é composta de:
@@ -37,11 +37,28 @@ Cada tipo primitivo tem sua respectiva função, sendo elas:
 - **byte e short:** armazenam valores números.
 - **char:** armazena um caractere da tabela ASCII.
 
-Cada variável armazena possui um tamanho em memória e um 'range' de valores que podem ser armazenados.
+Cada variável aloca possui um tamanho em memória e um 'range' de valores que podem ser armazenados.
 ![img.png](img.png)
 
-No mundo atual, os tamanhos de cara tipo primitivo acaba não importando muito, porém os valores que podem ser armazenados sim.
+No mundo atual, os tamanhos de cada tipo primitivo acaba não importando muito, porém os valores que podem ser armazenados sim.
 
-Por exemplo: Digamos que você declare a variável <code>short salario</code>, pode funcionar para uma certa porcentagem de pessoa, mas e para quem receber mais de R$32767? O programa irá emitir um erro. Então é muito importante que você pense no futuro ao se escolher o tipo de uma variável.
+Por exemplo: Digamos que você declare a variável <code>short salario</code>, pode funcionar para uma certa porcentagem de pessoa, mas e para quem receber mais de R$32767? O programa irá emitir um erro. Então é muito importante pensar no futuro ao se escolher o tipo de uma variável.
 
-Algo interessante de se notar é que o tipo primitivo char possui tamanho de 2 bytes, e isso acontece porque os caracteres asiáticos maiores possuem um peso maior que uma letra romana.
+Algo interessante de se notar é que o tipo primitivo <code>char</code> possui tamanho de 2 bytes, e isso acontece porque os caracteres asiáticos maiores possuem um peso maior que uma letra romana.
+
+<h3>Casting</h3>
+O casting é uma forma de você armazenar um variável de um tipo primitivo em outro tipo - não é uma prática boa a se fazer.
+Exemplo: <code>int casting = (int) 12345678910L;</code>.
+
+Neste caso, eu forcei um tipo <code>long</code> virar um tipo <code>int</code>.
+
+<h3>String</h3>
+
+No Java, uma string não é considerada um tipo primitivo e sim uma classe. Para declarar um valor à uma string, é necessário utilizar aspas duplas. Por exemplo: <code>String nome = "Gabriel";</code>
+
+<h2>Aula03: ExercicioTiposPrimitivos</h3>
+
+Crie variáveis para os campos descritos abaixo entre "<>" e imprima a seguinte mensagem:
+
+Eu, \<nome>, morando no endereço \<endereço>,<br>confirmo que recebi o salário de \<salario>, na data \<data>. 
+
